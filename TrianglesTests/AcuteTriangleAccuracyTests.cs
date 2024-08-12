@@ -4,12 +4,14 @@ using Xunit;
 
 namespace TrianglesTests;
 
-public sealed class RightTriangleAccuracyTests
+public sealed class AcuteTriangleAccuracyTests
 {
     [Theory]
-    [InlineData(5, 2.99999, 4)]
-    [InlineData(5, 3.000009, 4)]
-    public void AcuteTriangleTest(
+    [InlineData(1, 1, 1)]
+    [InlineData(3, 3, 2)]
+    [InlineData(2, 3, 3)]
+    [InlineData(3, 2, 3)]
+    public void AcuteTriangleAccuracyTest(
         double sideA,
         double sideB,
         double sideC
@@ -28,6 +30,6 @@ public sealed class RightTriangleAccuracyTests
 
         type
             .Should()
-            .Be(TriangleType.Right);
+            .Be(TriangleType.Acute);
     }
 }
