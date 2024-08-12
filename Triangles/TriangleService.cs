@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Triangles;
+﻿namespace Triangles;
 
 public sealed class TriangleService :
     ITriangleService
@@ -10,7 +8,8 @@ public sealed class TriangleService :
         double sideA,
         double sideB,
         double sideC,
-        double accuracy = Constants.Accuracy
+        double accuracy =
+            Constants.BaseAccuracy
     )
     {
         double[] sides =

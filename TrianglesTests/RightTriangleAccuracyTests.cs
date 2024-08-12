@@ -4,7 +4,6 @@ using Xunit;
 
 namespace TrianglesTests;
 
-
 public sealed class RightTriangleAccuracyTests
 {
     [Theory]

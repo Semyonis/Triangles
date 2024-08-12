@@ -2,7 +2,7 @@
 
 public enum TriangleType
 {
-    Acute, // Остроугольный
-    Right, // Прямоугольный
-    Obtuse // Тупоугольный
+    Acute,
+    Right,
+    Obtuse
 }

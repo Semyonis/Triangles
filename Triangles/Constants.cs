@@ -1,6 +1,6 @@
 ﻿namespace Triangles;
 
-public class Constants
+public static class Constants
 {
-    public const double Accuracy = 0.0001;
+    public const double BaseAccuracy = 0.0001;
 }
