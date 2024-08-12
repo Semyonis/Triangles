@@ -2,9 +2,7 @@
 
 public interface ITriangleService
 {
-    TriangleType GetType(
-        double sideA,
+    TriangleType GetType(double sideA,
         double sideB,
-        double sideC
-    );
+        double sideC, double accuracy);
 }

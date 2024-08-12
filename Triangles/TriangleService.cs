@@ -1,12 +1,16 @@
-﻿namespace Triangles;
+﻿using System;
+
+namespace Triangles;
 
 public sealed class TriangleService :
     ITriangleService
 {
+
     public TriangleType GetType(
         double sideA,
         double sideB,
-        double sideC
+        double sideC,
+        double accuracy = Constants.Accuracy
     )
     {
         double[] sides =
@@ -25,11 +29,11 @@ public sealed class TriangleService :
 
         var sumOfLegs =
             firstLeg + secondLeg;
-        
-        if (hypotenuse < sumOfLegs)
+
+        if (hypotenuse < sumOfLegs -  accuracy)
             return TriangleType.Acute;
 
-        if (hypotenuse > sumOfLegs)
+        if (hypotenuse > sumOfLegs + accuracy)
             return TriangleType.Obtuse;
         
         return TriangleType.Right;

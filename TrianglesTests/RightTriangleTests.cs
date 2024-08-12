@@ -24,7 +24,7 @@ public sealed class RightTriangleTests
             triangleService
                 .GetType(
                     sideA,
-                    sideB,
+                    sideB, 
                     sideC
                 );
 

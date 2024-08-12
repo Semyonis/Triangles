@@ -24,7 +24,7 @@ public sealed class ObtuseTriangleTests
             triangleService
                 .GetType(
                     sideA,
-                    sideB,
+                    sideB, 
                     sideC
                 );
 
